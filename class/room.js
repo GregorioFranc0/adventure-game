@@ -49,7 +49,7 @@ class Room {
     getItemByName(name) {
         for (let i = 0; i < this.items.length; i++) {
             if (this.items[i].name === name) {
-                return this.items[i];
+                return this.items.splice(i, 1)[0];
             }
 
         }

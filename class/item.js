@@ -1,5 +1,5 @@
 
-const { Player } = require("./player");
+const Player = require("./player");
 
 
 class Item {
