@@ -1,6 +1,6 @@
 const { Room } = require('./room');
 const { Item } = require('./item');
-//const { Food } = require('./food');
+const { Food } = require('./food');
 const worldData = require('../data/world-data')
 
 class World {

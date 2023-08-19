@@ -9,9 +9,13 @@ class Item {
     this.isFood = isFood;
   }
 
+  static getItems(...items) {
+    return items.map((item) => item.name);
+  }
 
 }
-
+const item = new Item("fork", "I can eat with this I guess");
+console.log(item)
 module.exports = {
   Item,
 };
