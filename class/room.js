@@ -1,3 +1,6 @@
+const { Item } = require("./item");
+const worldData = require("../data/world-data")
+
 class Room {
 
     constructor(name, description) {
@@ -44,13 +47,17 @@ class Room {
     }
 
     getItemByName(name) {
-        // Retrieves an item from a room by item name
 
-        // Your code here
+        this.items.push(name);
+        console.log(items);
     }
 
+
+
 }
+let item = new Item("rock", "just a simple rock");
+
 
 module.exports = {
-  Room,
+    Room,
 };

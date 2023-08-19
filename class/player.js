@@ -27,7 +27,7 @@ class Player {
             console.log(`${this.name} is not carrying anything.`);
         } else {
             console.log(`${this.name} is carrying:`);
-            for (let i = 0 ; i < this.items.length ; i++) {
+            for (let i = 0; i < this.items.length; i++) {
                 console.log(`  ${this.items[i].name}`);
             }
         }
@@ -59,5 +59,5 @@ class Player {
 }
 
 module.exports = {
-  Player,
+    Player,
 };

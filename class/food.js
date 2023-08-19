@@ -1,3 +1,14 @@
-// Create an edible `Food` class that inherits from the `Item` class
+//const { Room } = require("./room");
+const { Item } = require("./item");
 
-// Your code here
+class Food extends Item {
+
+    constructor(name, description, isFood = true) {
+        super(name, description, isFood)
+
+    }
+
+
+}
+const tuna = new Food("tuna", "i can't eat this dammit", true);
+console.log(tuna);
