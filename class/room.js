@@ -1,5 +1,5 @@
-const { Item } = require("./item");
-const worldData = require("../data/world-data")
+const Item = require("./item");
+
 
 class Room {
 
@@ -47,15 +47,19 @@ class Room {
     }
 
     getItemByName(name) {
+        for (let i = 0; i < this.items.length; i++) {
+            if (this.items[i].name === name) {
+                return this.items[i];
+            }
 
-        this.items.push(name);
-        console.log(items);
+        }
+
     }
 
 
 
 }
-let item = new Item("rock", "just a simple rock");
+
 
 
 module.exports = {
